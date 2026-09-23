@@ -12,9 +12,7 @@ At the same time, Code Blinks focuses on an equally important part of student gr
 
 ## 🌐 Live Demo
 
-🔗 Website: [Live Demo](YOUR_LIVE_DEMO_URL_HERE)
-
-> Replace YOUR_LIVE_DEMO_URL_HERE with your deployed website link.
+🔗 Website: [Live Demo](https://shivrajpatdev.github.io/Code-Blinks/index.html)
 
 ---
 
