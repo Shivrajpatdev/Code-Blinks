@@ -1,96 +1,424 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Code Blinks — a student-led community for technology learning, AI awareness, mental well-being, and growth.">
-<title>Our Program | Code Blinks</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Program | Code Blinks</title>
+
+    <meta
+        name="description"
+        content="Explore the Code Blinks 4-week program covering coding, AI, mental well-being, technology, and personal growth."
+    >
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="navbar">
-  <div class="container nav-inner">
-    <a class="brand" href="index.html">
-      <img src="assets/logo.png" alt="Code Blinks logo">
-      <span>Code</span>&nbsp;<b>Blinks</b>
-    </a>
-    <button class="menu-btn" aria-label="Open navigation" onclick="toggleMenu()">☰</button>
-    <nav class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="vision.html">Vision & Overview</a>
-      <a href="impact.html">Impact</a>
-      <a href="about.html">About Us</a>
-      <a href="program.html">Our Program</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+    <!-- =========================
+         HEADER
+    ========================== -->
 
-<main>
-<section class="page-hero">
-  <div class="container">
-    <span class="page-title-mark">Initial learning initiative</span>
-    <h1>Code Blinks — <span class="gradient-text">4-Week Program</span></h1>
-    <p>A beginner-friendly journey combining coding foundations, AI awareness, mental well-being, and reflection.</p>
-  </div>
-</section>
-<section class="section">
-  <div class="container">
-    <div class="timeline">
-      <article class="week">
-        <div class="week-number">Week 1<br>Introduction to Coding</div>
-        <div><h3>Start with the foundations</h3><ul><li>What Is Coding?</li><li>How Programming Works</li><li>Programming Languages</li><li>Algorithms & Problem Solving</li><li>Introduction to AI</li></ul></div>
-      </article>
-      <article class="week">
-        <div class="week-number">Week 2<br>Coding Fundamentals</div>
-        <div><h3>Build core programming skills</h3><ul><li>Variables & Data Types</li><li>Conditions & Logic</li><li>Loops</li><li>Functions</li><li>Debugging Basics</li></ul></div>
-      </article>
-      <article class="week">
-        <div class="week-number">Week 3<br>Mental Well-Being & Awareness</div>
-        <div><h3>Understand and care for well-being</h3><ul><li>Understanding Mental Health</li><li>Mental Health Awareness</li><li>Managing Stress</li><li>Building Healthy Habits</li><li>Self-Awareness & Emotional Well-Being</li></ul></div>
-      </article>
-      <article class="week">
-        <div class="week-number">Week 4<br>Technology, Mind & Future</div>
-        <div><h3>Connect technology with the future</h3><ul><li>Technology & Mental Well-Being</li><li>Responsible Use of Technology</li><li>AI & the Future</li><li>Building a Positive Digital Life</li><li>Final Project & Reflection</li></ul></div>
-      </article>
-    </div>
-  </div>
-</section>
-</main>
+    <header class="site-header">
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <a class="brand" href="index.html"><img src="assets/logo.png" alt=""> <span>Code</span>&nbsp;<b>Blinks</b></a>
-        <p>Learning technology. Building awareness. Growing together.</p>
-      </div>
-      <div>
-        <h3>Explore</h3>
-        <p><a href="vision.html">Vision & Overview</a><br>
-        <a href="impact.html">Impact</a><br>
-        <a href="program.html">Our Program</a></p>
-      </div>
-      <div>
-        <h3>Connect</h3>
-        <p><a href="about.html">About Us</a><br>
-        <a href="contact.html">Contact Us</a></p>
-      </div>
-    </div>
-    <div class="footer-bottom">© 2026 Code Blinks. Built by a student-led community.</div>
-  </div>
-</footer>
+        <div class="container nav">
+
+            <a href="index.html" class="brand">
+
+                <img
+                    src="assets/logo.png"
+                    alt="Code Blinks Logo"
+                >
+
+                <span>Code Blinks</span>
+
+            </a>
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="vision.html">Vision</a>
+                    </li>
+
+                    <li>
+                        <a href="impact.html">Impact</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="program.html" class="active">
+                            Our Program
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
 
 
-<script>
-function toggleMenu(){
-  document.getElementById('navLinks').classList.toggle('open');
-}
-document.querySelectorAll('.nav-links a').forEach(a=>{
-  if(a.pathname.split('/').pop() === location.pathname.split('/').pop()) a.classList.add('active');
-});
-</script>
+    <!-- =========================
+         PAGE HERO
+    ========================== -->
+
+    <main>
+
+        <section class="page-hero">
+
+            <div class="container">
+
+                <h1>Our 4-Week Program</h1>
+
+                <p>
+                    A beginner-friendly journey combining technology,
+                    coding, artificial intelligence, mental well-being,
+                    and personal growth.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROGRAM INTRODUCTION
+        ========================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="highlight">
+
+                    <h2>Code Blinks — 4-Week Program</h2>
+
+                    <p>
+                        Our four-week program introduces students to the
+                        fundamentals of coding and artificial intelligence
+                        while creating space for conversations around
+                        mental well-being, healthy habits, and personal
+                        growth.
+                    </p>
+
+                </div>
+
+
+                <!-- =========================
+                     WEEKLY PROGRAM
+                ========================== -->
+
+                <div class="timeline">
+
+
+                    <!-- =====================
+                         WEEK 1
+                    ====================== -->
+
+                    <article class="week-card">
+
+                        <div class="week-image">
+
+                            <img
+                                src="assets/week1.jpg"
+                                alt="Introduction to Coding"
+                            >
+
+                        </div>
+
+                        <div class="week-content">
+
+                            <span class="week-label">
+                                WEEK 1
+                            </span>
+
+                            <h2>
+                                Introduction to Coding
+                            </h2>
+
+                            <p>
+                              Start your journey into technology by
+                                understanding coding, programming,
+                                algorithms, problem solving, and the
+                                basics of artificial intelligence.
+                            </p>
+
+                            <ul>
+
+                                <li>
+                                    What Is Coding?
+                                </li>
+
+                                <li>
+                                    How Programming Works
+                                </li>
+
+                                <li>
+                                    Programming Languages
+                                </li>
+
+                                <li>
+                                    Algorithms &amp; Problem Solving
+                                </li>
+
+                                <li>
+                                    Introduction to AI
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =====================
+                         WEEK 2
+                    ====================== -->
+
+                    <article class="week-card">
+
+                        <div class="week-image">
+
+                            <img
+                                src="assets/week2.jpg"
+                                alt="Coding Fundamentals"
+                            >
+
+                        </div>
+
+                        <div class="week-content">
+
+                            <span class="week-label">
+                                WEEK 2
+                            </span>
+
+                            <h2>
+                                Coding Fundamentals
+                            </h2>
+
+                            <p>
+                                Build a foundation in programming concepts
+                                and learn how to approach problems through
+                                logical thinking and experimentation.
+                            </p>
+
+                            <ul>
+
+                                <li>
+                                    Variables &amp; Data Types
+                                </li>
+
+                                <li>
+                                    Conditions &amp; Logic
+                                </li>
+
+                                <li>
+                                    Loops
+                                </li>
+
+                                <li>
+                                    Functions
+                                </li>
+
+                                <li>
+                                    Debugging Basics
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =====================
+                         WEEK 3
+                    ====================== -->
+
+                    <article class="week-card">
+
+                        <div class="week-image">
+
+                            <img
+                                src="assets/week3.jpg"
+                                alt="Mental Well-Being and Awareness"
+                            >
+
+                        </div>
+
+                        <div class="week-content">
+
+                            <span class="week-label">
+                                WEEK 3
+                            </span>
+
+                            <h2>
+                                Mental Well-Being &amp; Awareness
+                            </h2>
+
+                            <p>
+                                Explore the importance of mental well-being,
+                                understand everyday pressures, and learn
+                                healthier ways to manage stress and support
+                                personal growth.
+                            </p>
+
+                            <ul>
+                              <li>
+                                    Understanding Mental Health
+                                </li>
+
+                                <li>
+                                    Mental Health Awareness
+                                </li>
+
+                                <li>
+                                    Managing Stress
+                                </li>
+
+                                <li>
+                                    Building Healthy Habits
+                                </li>
+
+                                <li>
+                                    Self-Awareness &amp; Emotional Well-Being
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =====================
+                         WEEK 4
+                    ====================== -->
+
+                    <article class="week-card">
+
+                        <div class="week-image">
+
+                            <img
+                                src="assets/week4.jpg"
+                                alt="Technology, Mind and Future"
+                            >
+
+                        </div>
+
+                        <div class="week-content">
+
+                            <span class="week-label">
+                                WEEK 4
+                            </span>
+
+                            <h2>
+                                Technology, Mind &amp; Future
+                            </h2>
+
+                            <p>
+                                Bring technology and personal well-being
+                                together while thinking about responsible
+                                technology use, artificial intelligence,
+                                and the future.
+                            </p>
+
+                            <ul>
+
+                                <li>
+                                    Technology &amp; Mental Well-Being
+                                </li>
+
+                                <li>
+                                    Responsible Use of Technology
+                                </li>
+
+                                <li>
+                                    AI &amp; the Future
+                                </li>
+
+                                <li>
+                                    Building a Positive Digital Life
+                                </li>
+
+                                <li>
+                                    Final Project &amp; Reflection
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CLOSING MESSAGE
+        ========================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="quote">
+
+                    <p>
+                        "Learn. Create. Connect. Grow."
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-inner">
+
+            <div class="footer-brand">
+                Code Blinks
+            </div>
+
+            <p>
+                We Are the Future. Let's Build It Together.
+            </p>
+
+        </div>
+
+    </footer>
 
 </body>
 </html>
