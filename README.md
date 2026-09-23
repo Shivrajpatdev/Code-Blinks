@@ -275,27 +275,3 @@ This project is built using simple and accessible web technologies:
 The website does not require a complicated framework or backend to run.
 
 ---
-
-# 📁 Project Structure
-
-`text
-Code-Blinks/
-│
-├── index.html
-├── vision.html
-├── impact.html
-├── about.html
-├── program.html
-├── contact.html
-├── style.css
-│
-├── assets/
-│   ├── logo.png
-│   ├── hero-banner.png
-│   ├── founder.png
-│   ├── week1.jpg
-│   ├── week2.jpg
-│   ├── week3.jpg
-│   └── week4.jpg
-│
-└── README.md
