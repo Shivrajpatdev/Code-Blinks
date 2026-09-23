@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap');
+
+:root{
+  --cream:#fffdf1;
+  --yellow:#fff3a6;
+  --yellow-strong:#ffe66d;
+  --pink:#f35b9f;
+  --cyan:#42cbd7;
+  --cyan-dark:#1faebb;
+  --ink:#263247;
+  --muted:#657083;
+  --white:#ffffff;
+  --line:#eee8c9;
+  --shadow:0 14px 40px rgba(52,62,82,.10);
+  --radius:24px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--cream);
+  color:var(--ink);
+  font-family:"Nunito",system-ui,-apple-system,sans-serif;
+  line-height:1.7;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{width:min(1120px,92%);margin:auto}
+
+.navbar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,253,241,.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(238,232,201,.8);
+}
+.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:10px;font-family:"Baloo 2";font-size:1.35rem;font-weight:800}
+.brand img{width:48px;height:48px;object-fit:contain}
+.brand span{color:var(--pink)}
+.brand b{color:var(--cyan-dark)}
+.nav-links{display:flex;align-items:center;gap:6px}
+.nav-links a{
+  padding:10px 13px;border-radius:14px;font-weight:800;font-size:.94rem;
+}
+.nav-links a:hover,.nav-links a.active{background:var(--yellow);color:var(--pink)}
+.menu-btn{display:none;border:0;background:var(--yellow);font-size:1.4rem;border-radius:12px;padding:7px 12px}
+
+.hero{padding:28px 0 70px}
+.hero-banner{
+  border-radius:30px;overflow:hidden;box-shadow:var(--shadow);
+  background:var(--yellow);
+}
+.hero-banner img{width:100%;height:auto}
+.hero-copy{text-align:center;max-width:820px;margin:44px auto 0}
+.kicker{
+  display:inline-block;background:var(--yellow);color:var(--pink);
+  padding:7px 15px;border-radius:999px;font-weight:800;margin-bottom:12px
+}
+h1,h2,h3{font-family:"Baloo 2";line-height:1.12;margin:0 0 16px}
+h1{font-size:clamp(2.6rem,7vw,5.2rem)}
+h2{font-size:clamp(2rem,4vw,3.1rem)}
+h3{font-size:1.45rem}
+.gradient-text{color:var(--pink)}
+.hero-copy p{font-size:1.1rem;color:var(--muted);max-width:760px;margin:0 auto 25px}
+.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:12px 21px;border-radius:999px;font-weight:800;border:2px solid transparent;
+  transition:.2s transform,.2s box-shadow
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(52,62,82,.12)}
+.btn-primary{background:var(--pink);color:white}
+.btn-secondary{background:white;border-color:var(--cyan);color:var(--cyan-dark)}
+
+.section{padding:78px 0}
+.section.alt{background:#fff}
+.section-head{text-align:center;max-width:760px;margin:0 auto 38px}
+.section-head p{color:var(--muted)}
+.grid{display:grid;gap:22px}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.card{
+  background:white;border:1px solid var(--line);border-radius:var(--radius);
+  padding:28px;box-shadow:var(--shadow)
+}
+.card.yellow{background:#fff9ce}
+.card.pink{background:#fff0f7}
+.card.cyan{background:#ebfcfd}
+.icon{
+  width:52px;height:52px;border-radius:17px;display:grid;place-items:center;
+  font-size:1.6rem;background:var(--yellow);margin-bottom:17px
+}
+.card p{color:var(--muted);margin:0}
+.check-list{list-style:none;padding:0;margin:0}
+.check-list li{padding:8px 0 8px 29px;position:relative;color:var(--muted)}
+.check-list li:before{content:"✓";position:absolute;left:0;color:var(--pink);font-weight:900}
+
+.page-hero{padding:68px 0 46px;text-align:center}
+.page-hero p{max-width:760px;margin:auto;color:var(--muted);font-size:1.05rem}
+.page-title-mark{font-size:.95rem;color:var(--cyan-dark);font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.split-image{border-radius:28px;overflow:hidden;background:var(--yellow);box-shadow:var(--shadow)}
+.split-image img{width:100%;height:auto}
+.quote{
+  border-left:5px solid var(--pink);padding:10px 0 10px 20px;
+  font-size:1.15rem;font-weight:700
+}
+
+.timeline{display:grid;gap:18px;max-width:900px;margin:auto}
+.week{
+  display:grid;grid-template-columns:170px 1fr;gap:22px;align-items:start;
+  background:white;border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:var(--shadow)
+}
+.week-number{
+  background:var(--yellow);border-radius:18px;padding:14px;text-align:center;
+  font-family:"Baloo 2";font-size:1.25rem;font-weight:800;color:var(--pink)
+}
+.week ul{margin:8px 0 0;padding-left:20px;color:var(--muted)}
+.week li{margin:3px 0}
+
+.mission{
+  background:linear-gradient(135deg,#fff5aa,#fff0f7);
+  border:1px solid var(--line);border-radius:30px;padding:45px;text-align:center;
+  box-shadow:var(--shadow)
+}
+.mission p{max-width:800px;margin:0 auto 24px;color:var(--muted);font-size:1.08rem}
+
+.footer{background:#253047;color:#fff;padding:45px 0 25px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:35px}
+.footer .brand{color:white}
+.footer .brand span{color:#ff76b3}
+.footer .brand b{color:#5be0e7}
+.footer p{color:#cbd1dc}
+.footer a{color:#e9edf3}
+.footer a:hover{color:#ffe66d}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:30px;padding-top:18px;color:#aeb7c5;font-size:.9rem}
+
+.contact-form-card{max-width:760px;margin:auto;text-align:center}
+.form-note{color:var(--muted);margin-bottom:25px}
+
+.reveal{animation:fadeUp .65s ease both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+
+@media(max-width:850px){
+  .menu-btn{display:block}
+  .nav-links{
+    display:none;position:absolute;left:4%;right:4%;top:70px;background:white;
+    padding:10px;border-radius:18px;box-shadow:var(--shadow);border:1px solid var(--line);
+    flex-direction:column;align-items:stretch
+  }
+  .nav-links.open{display:flex}
+  .nav-links a{text-align:center}
+  .grid-3,.grid-2,.split,.footer-grid{grid-template-columns:1fr}
+  .week{grid-template-columns:1fr}
+  .hero{padding-top:18px}
+}
