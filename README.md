@@ -242,26 +242,6 @@ Support both technical development and personal well-being.
 
 ---
 
-## Program Images
-
-### Week 1
-
-![Week 1 - Introduction to Coding](assets/week1.jpg)
-
-### Week 2
-
-![Week 2 - Coding Fundamentals](assets/week2.jpg)
-
-### Week 3
-
-![Week 3 - Mental Well-Being & Awareness](assets/week3.jpg)
-
-### Week 4
-
-![Week 4 - Technology, Mind & Future](assets/week4.jpg)
-
----
-
 # 🛠️ Technologies Used
 
 This project is built using simple and accessible web technologies:
